@@ -1,0 +1,267 @@
+@import './customerVar.styl'
+.fixed:after
+    display block
+    content: '.'
+    height 0
+    opacity: 0
+    width: 100%
+    clear: both
+.left
+    float left
+.right 
+    float right
+.wx-avatar
+    width: 30px
+    border-radius: 15px
+    vertical-align: middle
+.wx-avatar-big
+    width: 70px
+    padding: 5px
+.cursor
+    cursor pointer
+ul li
+    list-style none
+.ivu-menu-vertical .ivu-menu-item:hover, .ivu-menu-vertical .ivu-menu-submenu-title:hover
+    background: ykt_color4
+.ykt-menu .ivu-menu-vertical .ivu-menu-submenu-title-icon
+    float: right;
+    position: relative;
+    top: 4px;
+    display: none;
+.height-full
+    height: 100%
+.table, .table-no-title, .tree
+    position relative
+    height: 100%
+    width: 100%
+    padding-top: 40px
+    background ykt_color5
+    .ivu-table th
+        height 50px
+    .table-title
+        position: absolute;
+        top: 0
+        left: 0
+        padding 0 ykt_table_content_padding
+        height 40px        
+        width: 100%
+        line-height 40px
+        background: #fff
+        font-size 14px
+        font-weight: 700
+        .addNewBtn
+            float right 
+            margin-left 10px
+    .table-content
+        height: 100%
+        width: 100%
+        overflow-y: auto
+        padding 0 ykt_table_content_padding
+        border-top 1px solid ykt-border-color1
+        position relative        
+    .filter
+        margin-bottom 10px
+        .ivu-collapse            
+            border none
+        .ivu-collapse-header
+            text-align center
+            height 20px
+            line-height 20px
+            background ykt_color5
+        .ivu-collapse-content
+            background ykt_color5
+        .filter-item
+            width 200px
+        .filter-container
+            position: relative
+    .itemSelect
+        display inline-block
+        margin-right 10px
+        height 40px
+        line-height 40px
+        .select-label
+            display inline-block
+            margin-left: 10px
+            min-width: 80px
+            text-align right
+            font-size 13px
+    .drop-size
+        width 120px 
+        button,ul
+            width 120px    
+    .ivu-table-wrapper
+        margin 5px 0
+        .ivu-poptip-inner
+            .ivu-poptip-body
+                padding 0
+        .ivu-checkbox-wrapper
+            margin-right 0
+    .ivu-table-wrapper
+        margin 0
+        .ivu-poptip-inner
+            .ivu-poptip-body
+                padding 0
+        .ivu-checkbox-wrapper
+            margin-right 0
+    .operations
+        padding-top 13px
+        padding-left: 20px
+        height 56px
+        background #fff
+        .batch-operation-btn
+            margin-right 10px
+        .right
+            margin-top 4px
+            margin-right 10px
+            i 
+                font-size 2em
+    .action
+        cursor pointer
+        color #01a8f6
+    .multiple
+        position relative
+        margin-left 50px
+        &:before
+            display block
+            content ''
+            position absolute
+            left -32px
+            top 8px
+            width 60px
+            height 30px
+            background url(../img/icons/spark.png) center center no-repeat    
+    .ivu-table-cell .ivu-poptip-inner
+        position fixed
+        width 120px
+        z-index 5
+    .ivu-table-fixed-right::before, .ivu-table-fixed::before 
+        content ''
+        width 100%
+        height 0px
+        background-color ykt-border-color1
+        position absolute
+        left 0
+        bottom 0
+        z-index 4
+    .ivu-collapse-header 
+        background #fff
+    .demo-spin-icon-load
+        animation ani-demo-spin 1s linear infinite
+    @keyframes ani-demo-spin {
+        from { transform: rotate(0deg);}
+        50%  { transform: rotate(180deg);}
+        to   { transform: rotate(360deg);}
+    }
+    .demo-spin-col
+        height 100px
+        position relative
+        border 1px solid #eee
+    .filter-btns
+        margin-top: 10px
+        padding-left: 100px
+        button
+            margin-right: 20px
+        > span 
+            color: #169BD5
+    .table-wrapper 
+        background: #ffffff
+        position: relative
+        min-height: 88%
+        padding-bottom: 60px
+        .pagination-wrapper
+            position: absolute
+            left: ykt_table_content_padding
+            bottom: 3px
+            height: 60px
+            line-height: 40px
+    .table-slot-top
+        height: 80px
+        line-height: 100px
+.table-no-title
+    padding-top: 0px
+    .table-content
+        border-top: none
+
+.tree-filter
+    position absolute
+    z-index 21
+.tree-wrapper
+    position absolute
+    top 0
+    left 0
+    z-index 20
+    height 100%
+    padding 0 10px
+    padding-top 50px
+    .menu-tree
+        float left
+        width 280px
+        height 100%
+        border 1px solid ykt-border-color1
+        background #f7f7f7
+    .menu-table
+        float left
+        height 100%
+        width calc(100% - 280px)
+        padding-left 10px
+        border 1px solid ykt-border-color1
+        border-left none
+        background-color #fff
+        .filter
+            height 50px
+            line-height 60px
+            margin-bottom 0
+            background-color #fff
+        .table-content
+            padding 0
+.ivu-input-number 
+    width 100%
+
+.long-modal .ivu-form-item
+    margin-bottom: 5px
+    vertical-align: top
+    zoom: 1
+.page-template
+    position relative
+    height: 100%
+    width: 100%
+    padding-top: 40px
+    background ykt_color5
+    .page-template-title
+        position: absolute;
+        top: 0
+        left: 0
+        padding 0 ykt_new_content_padding
+        height 40px        
+        width: 100%
+        line-height 40px
+        background: #fff
+        font-size 14px
+        font-weight: 700
+    .page-template-content
+        position relative
+        height: 100%
+        width: 100%
+        overflow-y: auto
+        padding ykt_new_content_padding
+        border-top 1px solid ykt-border-color1
+        .page-template-main
+            padding 45px
+            border 1px solid ykt-border-color1
+            background: #ffffff
+        .form-content-order
+            font-size: 14px
+            border-bottom 1px solid ykt-border-color1
+.ivu-poptip-popper[data-transfer="true"]
+    z-index 900
+    cursor pointer
+    text-align center
+    .ivu-poptip-body
+        padding 0
+    .action-item
+            height 30px
+            line-height 30px
+            color black
+            &:hover
+                background #2d8cf0;
+                color: #ffffff

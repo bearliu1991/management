@@ -1,0 +1,68 @@
+权限
+    1.update 接口的修改方法，因为没有返回数据？
+    2.getlist 接口返回数据为空？
+    
+套餐
+    创建时需要获取role树 后台没做好 还有两个接口没写？
+防作弊配置 (ok)
+    1. queryAntiCheatCfg 接口 limitSn 如何获取?
+    2. queryAntiCheatCfg 接口 返回的数据格式不清?
+aap confing
+    1. queryAppConfig 接口 Network Error
+    2. createTime 在query是是否不要此参数
+    3. createTime 在add\update是是否不要此参数
+
+system message
+    1.delete api
+    2.show api id: 
+message template (undo)
+system version
+
+status setting has 3 apis , dont know
+    getTStatusTableById: self.Path.getTStatusTableById,
+    delTStatusTableById: self.Path.delTStatusTableById,
+    saveTStatusTable: self.Path.saveTStatusTable
+meal setting has 3 apis , dont know
+    getTPackageRoleById: self.Path.getTPackageRoleById,
+    addTPackageRole: self.Path.addTPackageRole,
+    deleteTPackageRoleById: self.Path.deleteTPackageRoleById
+
+data lib dont know
+    Url：http://xingke100.com/xkdata-web/tconfig/loadTConfigListTree
+
+你那些没数据应该是传空字符串了 111
+
+用户无数据  111
+
+系统配置无数据  111
+右边权限表格有错    ???
+敏感词  等级不是类型  用途和使用方式    111
+表格里数据要标明意思    111
+敏感词添加替换类型没有传入参数  111
+角色管理查看业务查看无数据  111
+修改角色行业选择栏名称为普通参数    111
+修改角色失败    111
+角色筛选排序字段    111
+itemdefine没显示    111
+套餐批量操作为修改敏感词    ?? query error
+套餐权限没配置      ??
+状态设置有两个业务操作   ???
+        getTStatusTableById tableName= unknow source
+排序字段让用户写    111
+状态分类没有    ?? tableName= unknow source
+
+服务配置批量操作无选项      111
+定时任务配置无数据      null
+身份定义身份描述没有    ?? undo
+状态不是下拉框选项
+修改时没有传identityCode修改失败        ?? db err
+添加时状态不是下拉框选项，且没有身份图标和身份描述     param 
+身份服务没有       ?? undo
+
+防作弊刷票      ???
+app配置     ???
+
+系统消息添加消息接受消息用户错误，状态应为ACTIVE或DISABLED      111
+用户类型不展示      111
+分页查询不应该只有消息id       111
+系统版本只有一条数据，没有分页查询      111
