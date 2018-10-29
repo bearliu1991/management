@@ -42,7 +42,7 @@ radiusBottom(n)
   border-bottom-right-radius: n
 cursor()
   cursor:pointer
-border(n)
+border
   border-1px solid n
 boxShadow(n)
   box-shadow: n
@@ -53,10 +53,6 @@ setMiddle()
 setStart()
   display:flex
   justify-content: flex-start
-  align-items: center
-setEnd()
-  display:flex
-  justify-content: flex-end
   align-items: center
 setBetween()
   display:flex
@@ -71,8 +67,8 @@ gradientRed()
   background-image: -webkit-linear-gradient(to bottom, #e7556e 0, #f95867 100%)
   background-image:linear-gradient(to bottom, #e7556e 0, #f95867 100%)
 gradientBlue()
-  background-image:-webkit-linear-gradient(to bottom, #25d1ff 0, #5397fa 100%)
-  background-image:linear-gradient(to bottom, #25d1ff 0, #5397fa 100%)
+  background-image:-webkit-linear-gradient(to right, #57addd 0, #4882c5 100%)
+  background-image:linear-gradient(to right, #57addd 0, #4882c5 100%)
 gradient(n)
   background-image:-webkit-linear-gradient(n)
   background-image:linear-gradient(n)
@@ -92,50 +88,5 @@ commonBtn()
   color:#fff
 colorRed()
 	color:#ff6a76
-fn(n=14px)
+ft(n=14)
   font-size:n
-vertical(n)
-  height:n
-  line-height:n
-column()
-  display:flex
-  flex-direction:column
-relative()
-  position:relative
-absolute()
-  position:absolute
-fixed()
-  position:fixed
-center()
-  text-align:center
-square(n)
-  width:n
-  height:n
-  line-height:n
-  text-align:center
-mr(n)
-  margin-right:n
-ml(n)
-  margin-left:n
-mt(n)
-  margin-top:n
-mb(n)
-  margin-bottom:n
-padr(n)
-  padding-right:n
-padl(n)
-  padding-left:n
-padt(n)
-  padding-top:n
-padb(n)
-  padding-bottom:n
-inline()
-  display:inline-block
-fl()
-  float:left
-fr()
-  float:right
-clear()
-  content: " "
-  display: table
-  clear: both

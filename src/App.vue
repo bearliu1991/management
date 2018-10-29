@@ -1,32 +1,22 @@
 <template>
-  <div id="app" >
-    <transition name="fade">
-      <router-view/>
-    </transition>
+  <div id="app">
+    <router-view/>
   </div>
 </template>
 
 <script>
   export default {
-    name: 'App',
-    data () {
-      return {}
-    },
-    created () {
-      console.log('app created')
-      this.poperClose()
-    },
-    methods: {
-      poperClose() {
-        document.querySelectorAll('.ivu-poptip-popper').forEach(item => {
-          item.onmouseout = () => this.bodyClick()
-        })
-      }
-    }
+    name: 'App'
   }
 </script>
 
 <style lang="stylus">
+  @import './assets/css/index.styl'
+
   #app
-    height 100%
+    font-family: 'Avenir', Helvetica, Arial, sans-serif
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+    text-align: center
+    color: #2c3e50
 </style>

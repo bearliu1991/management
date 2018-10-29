@@ -25,14 +25,6 @@ module.exports = {
     'generator-star-spacing': 'off',
     'indent': 0,
     // allow debugger during development
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
-    'semi' : 0,
-    'quotes' : 0,
-    'key-spacing': 0,
-    'space-before-function-paren' : 0,
-    'vue/no-parsing-error': [2, { 'x-invalid-end-tag': false }]
-  },
-  globals: {
-    BUS : true
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off'
   }
 }
